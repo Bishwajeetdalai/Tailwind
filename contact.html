@@ -11,9 +11,22 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+     <style>
+        .nav-link {
+            position: relative;
+        }
+
+        body#home a[href="./index.html"],
+        body#about a[href="./about.html"],
+        body#contact a[href="./contact.html"] {
+            text-decoration: underline;
+            text-underline-offset: 8px;
+            color: #e52305;
+        }
+    </style>
 </head>
 
-<body class="bg-green-100">
+<body class="bg-green-100" id="contact">
     <!-- --------------------------HEADER SECTION----------------------------------------------------------------------------------- -->
 
     <header class="bg-white py-0 text-center ">
@@ -52,17 +65,17 @@
 
                 <li>
                     <a href="./index.html"
-                        class="transition duration-150 hover:text-red-500 hover:-translate-y-0.5 inline-block">HOME</a>
+                        class="nav-link transition duration-150 hover:text-red-500 hover:-translate-y-0.5 inline-block">HOME</a>
                 </li>
 
                 <li>
                     <a href="./about.html"
-                        class="transition duration-150 hover:text-red-500 hover:-translate-y-0.5 inline-block ">ABOUT</a>
+                        class="nav-link transition duration-150 hover:text-red-500 hover:-translate-y-0.5 inline-block ">ABOUT</a>
                 </li>
 
                 <li>
                     <a href="./contact.html"
-                        class="transition duration-150 hover:text-red-500 hover:-translate-y-0.5 inline-block ">CONTACT
+                        class="nav-link transition duration-150 hover:text-red-500 hover:-translate-y-0.5 inline-block ">CONTACT
                         US</a>
                 </li>
             </ul>
